@@ -65,7 +65,7 @@ function Footer() {
         <MiniSubtitle
           miniSubtitleColor='#f1f1f1'
         >Por Gustavo Triaquim</MiniSubtitle>
-        <FooterA href="/">Ver codigo no Github</FooterA>
+        <FooterA href="https://github.com/GustavoTriaquim/Portfolio2025">Ver codigo no Github</FooterA>
       </ContainerFooterText>
       <div>
         <a href="/">
