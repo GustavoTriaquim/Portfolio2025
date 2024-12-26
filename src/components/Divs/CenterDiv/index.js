@@ -7,6 +7,7 @@ export const CenterDiv = styled.div`
   align-items: ${props => props.alignCenterDiv || 'center'};
   text-align: ${props => props.alignTextCenterDiv || 'center'};
   width: ${props => props.widthCenterDiv || '100%'};
+  height: ${props => props.heightCenterDiv || 'none'};
   gap: ${props => props.gapCenterDiv || '30px'};
   padding: ${props => props.paddingCenterDiv || '50px 0px'};
   box-shadow: ${props => props.shadowBoxCenterDiv || 'none'};

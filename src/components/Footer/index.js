@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Pato from '../../assets/images/pato.png';
 import { SuperSubtitle, MiniSubtitle } from "../Texts/Subtitle";
+import { Link } from "react-router-dom";
 
 const FooterContainer = styled.footer`
   background-color: #0a3d88;
@@ -68,9 +69,9 @@ function Footer() {
         <FooterA href="https://github.com/GustavoTriaquim/Portfolio2025">Ver codigo no Github</FooterA>
       </ContainerFooterText>
       <div>
-        <a href="/">
+        <Link to="/contato">
           <FooterButton>CONTATE-ME</FooterButton>
-        </a>
+        </Link>
       </div>
     </FooterContainer>
   );

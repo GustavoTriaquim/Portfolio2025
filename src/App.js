@@ -9,6 +9,8 @@ import ContentSectionHobbie from "./components/ContentSectionHobbies";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PdfViewer from "./components/PdfViewer";
+import ContatoPage from "./components/ContatoPage";
+import ContainerBlue from "./components/ContainerBlue";
 
 const Body = styled.body`
   background-color: #f1f1f1;
@@ -22,25 +24,43 @@ function App() {
   return (
     <Router>
       <Body>
-        <Header />
-        <main>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <main>
                   <ContentTopo />
                   <ContentSectionSobre />
                   <ContentSectionEstudos />
                   <ContentSectionProjetos />
                   <ContentSectionHobbie />
-                </>
-              }
-            ></Route>
-            <Route path="/certificates/:id" element={<PdfViewer />} />
-          </Routes>
-        </main>
-        <Footer />
+                </main>
+                <Footer />
+              </>
+            }
+          ></Route>
+          <Route path="/certificates/:id" element={
+            <>
+              <ContainerBlue />
+              <main
+                style={{ paddingTop: '0px' }}
+              >
+                <PdfViewer />
+              </main>
+              <Footer />
+            </>
+          } />
+          <Route path="/contato" element={
+            <>
+              <ContainerBlue />
+              <main>
+                <ContatoPage />
+              </main>
+            </>
+          } />
+        </Routes>
       </Body >
     </Router>
   );
