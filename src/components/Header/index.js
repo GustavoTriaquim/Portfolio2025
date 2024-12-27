@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import ContactButton from "../ContactButton";
+import ContainerFooterSidebar from "../ContainerFooterSideBar";
+import ImageLogo from "../ImageLogo";
 
 const HeaderContainer = styled.div`
   background-color: #0a3d88;
@@ -72,7 +76,7 @@ const HeaderButton = styled.button`
   }
 `;
 
-const StyledLinkHover = styled(Link)`
+const StyledLinkHover = styled(LinkScroll)`
   &:hover{
     cursor: pointer;
   }
@@ -93,13 +97,18 @@ const MenuIcon = styled.div`
 const Sidebar = styled.div`
   position: fixed;
   top: 0;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-1000%")};
+  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
   width: 100vw;
   height: 100vh;
   background-color: #0a3d88;
   transition: left 0.3s ease-in-out;
   z-index: 1000;
   padding: 20px;
+  display: none;
+
+  @media (max-width: 1000px){
+    display: block;
+  }
 `;
 
 const SidebarList = styled.ul`
@@ -115,6 +124,15 @@ const SidebarItem = styled.li`
   &:hover {
     color: #bd6d3c;
   }
+`;
+
+const ContainerSidebar = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  margin-top: 50px;
 `;
 
 function Header() {
@@ -184,6 +202,13 @@ function Header() {
             </SidebarItem>
           ))}
         </SidebarList>
+        <ContainerSidebar>
+          <ImageLogo />
+          <ContainerFooterSidebar />
+          <Link to='/contato'>
+            <ContactButton>CONTATE-ME</ContactButton>
+          </Link>
+        </ContainerSidebar>
       </Sidebar>
     </>
   );
