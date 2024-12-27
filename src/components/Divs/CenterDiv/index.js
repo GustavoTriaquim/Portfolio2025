@@ -14,4 +14,11 @@ export const CenterDiv = styled.div`
   border: ${props => props.borderCenterDiv || 'none'};
   border-radius: ${props => props.radiusCenterDiv || 'none'};
   background-color: ${props => props.backgroundCenterDiv || 'transparent'};
+
+  @media (max-width: 1000px) {
+    width: ${props => props.widthCenterDivMedia};
+    gap: ${props => props.gapCenterDivMedia};
+    padding: ${props => props.paddingCenterDivMedia};
+    height: ${props => props.heightCenterDivMedia};
+  }
 `;

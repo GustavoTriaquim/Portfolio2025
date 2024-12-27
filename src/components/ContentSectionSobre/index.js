@@ -29,6 +29,8 @@ function ContentSectionSobre() {
             paddingCenterDiv='15px 10px'
             shadowBoxCenterDiv='0px 0px 16px rgba(10, 60, 136, 0.18)'
             radiusCenterDiv='15px'
+            widthCenterDivMedia='100%'
+            gapCenterDivMedia='30px'
           >
             <Paragraph
               paragraphWidth='100%'
@@ -56,6 +58,9 @@ function ContentSectionSobre() {
             widthCenterDiv='50%'
             displayCenterDiv='flex'
             paddingCenterDiv='0px 0px 0px 150px'
+            widthCenterDivMedia='100%'
+            gapCenterDivMedia='30px'
+            paddingCenterDivMedia='0px'
           >
             <ImageComponent
               src={GustavoImage} alt='Gustavo' maxWidth='100%' />

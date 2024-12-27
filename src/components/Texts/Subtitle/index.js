@@ -10,6 +10,10 @@ export const SuperSubtitle = styled.h2`
   &:hover {
     cursor: default;
   }
+
+  @media (max-width: 1000px) {
+    font-size: ${props => props.superSubtitleFontSizeMedia};
+  }
 `;
 
 export const Subtitle = styled.h3`
@@ -33,5 +37,9 @@ export const MiniSubtitle = styled.h4`
 
   &:hover {
     cursor: default;
+  }
+
+  @media(max-width: 1000px) {
+    font-size: ${props => props.miniSubtitleFontSizeMedia || '13px'};
   }
 `;

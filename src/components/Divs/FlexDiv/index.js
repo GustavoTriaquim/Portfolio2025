@@ -10,4 +10,11 @@ export const FlexDiv = styled.div`
   border-radius: ${props => props.radiusFlexDiv || 'none'};
   background-color: ${props => props.backgroundFlexDiv || 'transparent'};
   padding: ${props => props.paddingFlexDiv || '0px'};
+
+  @media (max-width: 1000px) {
+    flex-direction: ${props => props.directionFlexDivMedia || 'column-reverse'};
+    gap: ${props => props.gapFlexDivMedia || '40px'};
+    padding: ${props => props.paddingFlexDivMedia};
+    width: ${props => props.widthFlexDivMedia || '100%'};
+  }
 `;

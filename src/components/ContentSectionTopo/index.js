@@ -6,6 +6,10 @@ import { CenterDiv } from '../Divs/CenterDiv';
 
 const SectionContentTopo = styled.section`
   padding: 50px 21% 70px 21%;
+  
+  @media (max-width: 1000px){
+    padding: 25px 8%;
+  }
 `;
 
 const SectionContentTopoInterface = styled.div`
@@ -13,6 +17,7 @@ const SectionContentTopoInterface = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 `;
 
 function ContentTopo() {
@@ -25,10 +30,13 @@ function ContentTopo() {
           <Title
             titleLineHeight='60px'
             titleFontSize='42px'
+            titleFontSizeMedia='25px'
+            titleLineHeightMedia='40px'
           >BEM-VINDO(A) AO PORTFOLIO DE</Title>
           <Title
             titleColor='#0a3b88'
             titleFontSize='42px'
+            titleFontSizeMedia='25px'
           >GUSTAVO BRITTO TRIAQUIM</Title>
         </CenterDiv>
         <CenterDiv
@@ -39,6 +47,8 @@ function ContentTopo() {
             paragraphLineHeight='50px'
             paragraphFontSize='30px'
             paragraphFontWeight='500'
+            paragraphFontSizeMedia='20px'
+            paragraphLineHeightMedia='30px'
           >
             Formado pelo novo Ensino Medio Tecnico, sou apaixonado por tecnologia e inovação.
           </Paragraph>
@@ -47,6 +57,8 @@ function ContentTopo() {
             paragraphLineHeight='50px'
             paragraphFontSize='30px'
             paragraphFontWeight='500'
+            paragraphFontSizeMedia='20px'
+            paragraphLineHeightMedia='30px'
           >
             Desde cedo, fui inspirado pelo universo tecnológico, mergulhando em projetos como jogos interativos, rastreadores solares e muito mais.
           </Paragraph>
@@ -55,6 +67,8 @@ function ContentTopo() {
             paragraphLineHeight='50px'
             paragraphFontSize='30px'
             paragraphFontWeight='500'
+            paragraphFontSizeMedia='20px'
+            paragraphLineHeightMedia='30px'
           >
             Estou em constante busca por novas oportunidades para explorar minha criatividade, desenvolver projetos autorais e contribuir para o sucesso das empresas em que trabalho.
           </Paragraph>
@@ -63,6 +77,8 @@ function ContentTopo() {
             paragraphLineHeight='50px'
             paragraphFontSize='30px'
             paragraphFontWeight='500'
+            paragraphFontSizeMedia='20px'
+            paragraphLineHeightMedia='30px'
           >
             Seja bem-vindo ao meu portfólio! Aqui você encontrará alguns dos meus trabalhos e ideias que refletem minha dedicação e paixão pela área.
           </Paragraph>

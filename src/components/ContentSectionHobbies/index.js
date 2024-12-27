@@ -35,6 +35,8 @@ function ContentSectionHobbie() {
             paddingFlexDiv='30px 15px'
             borderFlexDiv='1px solid #4370b4'
             radiusFlexDiv='25px'
+            paddingFlexDivMedia='30px 5px'
+            directionFlexDivMedia='column'
           >
             <ImageComponent
               src={Futsal} alt='futsal' maxWidth='100%' disableHover={true} />
@@ -42,6 +44,9 @@ function ContentSectionHobbie() {
               paragraphWidth='50%'
               paragraphLineHeight='50px'
               paragraphFontSize='22px'
+              paragraphFontSizeMedia='19px'
+              paragraphLineHeightMedia='30px'
+              paragraphWidthMedia='95%'
             >
               Para mim, futsal é uma forma de escapar um pouco da rotina e curtir o momento. Os treinos são uma maneira de liberar a cabeça e, claro, melhorar minhas habilidades, mas é dentro de campo, com os amigos, que o esporte realmente ganha sentido. Aquela vibe de equipe, o apoio dos colegas e a vontade de ganhar juntos tornam tudo ainda mais especial. No fim, o futsal é meu jeito de fazer o que amo, com muita diversão.
             </Paragraph>
@@ -56,6 +61,9 @@ function ContentSectionHobbie() {
               paragraphWidth='50%'
               paragraphLineHeight='50px'
               paragraphFontSize='22px'
+              paragraphFontSizeMedia='19px'
+              paragraphLineHeightMedia='30px'
+              paragraphWidthMedia='95%'
             >
               Cada instrumento tem sua magia: a energia da bateria, a harmonia do teclado e a leveza do violão me permitem criar e me conectar com diferentes estilos e emoções.
 

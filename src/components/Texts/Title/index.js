@@ -8,4 +8,9 @@ export const Title = styled.h1`
   font-size: ${props => props.titleFontSize || '25px'};
   text-align: ${props => props.titleTextAlign || 'center'};
   margin: ${props => props.titleMargin || '0'};
+
+  @media (max-width: 1000px) {
+    font-size: ${props => props.titleFontSizeMedia};
+    line-height: ${props => props.titleLineHeightMedia};
+  }
 `;

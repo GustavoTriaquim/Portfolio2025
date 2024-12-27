@@ -8,6 +8,12 @@ export const Paragraph = styled.p`
   font-size: ${props => props.paragraphFontSize || '20px'};
   text-align: ${props => props.paragraphTextAlign || 'justify'};
   font-weight: ${props => props.paragraphFontWeight || '400'};
+
+  @media (max-width: 1000px){
+    font-size: ${props => props.paragraphFontSizeMedia};
+    line-height: ${props => props.paragraphLineHeightMedia};
+    width: ${props => props.paragraphWidthMedia};
+  }
 `;
 
 export const StrongParagraph = styled.strong`

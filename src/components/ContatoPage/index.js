@@ -17,6 +17,10 @@ const DivContatoPage = styled.div`
   padding: 30px 25px;
   background-color: #ededed;
   border-radius: 15px;
+
+  @media (max-width: 1000px) {
+    width: 95%
+  }
 `;
 
 function ContatoPage() {
@@ -24,6 +28,7 @@ function ContatoPage() {
     <ContentSectionStyle
       paddingBorderTop='64px 7%'
       styleBorderTop='none'
+      heightSectionStyle='100vh'
     >
       <CenterDiv
         displayCenterDiv='flex'
@@ -34,6 +39,9 @@ function ContatoPage() {
         radiusCenterDiv='25px'
         shadowBoxCenterDiv='0px 0px 8px gray'
         backgroundCenterDiv='#e7e7e7'
+
+        gapCenterDivMedia='20%'
+        heightCenterDivMedia='50vh'
       >
         <Title
           titleFontSize='50px'
@@ -41,10 +49,13 @@ function ContatoPage() {
         <DivContatoPage>
           <FlexDiv
             gapFlexDiv='20px'
+            directionFlexDivMedia='row'
+            gapFlexDivMedia='0px'
           >
             <SuperSubtitle
               superSubtitleTextAlign='left'
               superSubtitleFontSize='40px'
+              superSubtitleFontSizeMedia='20px'
             >E-MAIL:</SuperSubtitle>
             <MiniSubtitle
               miniSubtitleFontSize='30px'
@@ -52,10 +63,13 @@ function ContatoPage() {
           </FlexDiv>
           <FlexDiv
             gapFlexDiv='20px'
+            directionFlexDivMedia='row'
+            gapFlexDivMedia='0px'
           >
             <SuperSubtitle
               superSubtitleTextAlign='left'
               superSubtitleFontSize='40px'
+              superSubtitleFontSizeMedia='20px'
             >WHATSAPP:</SuperSubtitle>
             <MiniSubtitle
               miniSubtitleFontSize='30px'
