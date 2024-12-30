@@ -12,5 +12,6 @@ export const Title = styled.h1`
   @media (max-width: 1000px) {
     font-size: ${props => props.titleFontSizeMedia};
     line-height: ${props => props.titleLineHeightMedia};
+    margin: ${props => props.titleMarginMedia};
   }
 `;
