@@ -31,6 +31,11 @@ const ContainerPdf = styled.div`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 800px;
+
+  @media (max-width: 1000px) {
+    width: 95%;
+    max-width: 95%;
+  }
 `;
 
 const ContainerPdfViewer = styled.div`
@@ -40,6 +45,10 @@ const ContainerPdfViewer = styled.div`
   border: 2px solid #ccc;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+`;
+
+const StyledWorker = styled(Worker)`
+  
 `;
 
 const DownloadButton = styled.button`
@@ -64,19 +73,19 @@ function PdfViewer() {
   const pdfFiles = {
     "html-css-js": {
       url: HtmlCssJsPdf,
-      name: 'HTML CSS e JS - Certificado: Gustavo Triaquim',
+      name: 'HTML CSS e JS',
     },
     cpp: {
       url: '/certificates/cpp.pdf',
-      name: 'C++ - Certificado: Gustavo Triaquim',
+      name: 'C++',
     },
     figma: {
       url: FigmaPdf,
-      name: 'FIGMA - Certificado: Gustavo Triaquim',
+      name: 'FIGMA',
     },
     react: {
       url: ReactPdf,
-      name: 'REACT JS - Certificado: Gustavo Triaquim',
+      name: 'REACT JS',
     },
     ads: {
       url: AdsPdf,
@@ -111,9 +120,9 @@ function PdfViewer() {
               titleFontSize='32px'
             >{certificates.name}</Title>
             <ContainerPdfViewer>
-              <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+              <StyledWorker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
                 <Viewer fileUrl={certificates.url} />
-              </Worker>
+              </StyledWorker>
             </ContainerPdfViewer>
           </CenterDiv>
           <a href={certificates.url} download={certificates.name}>
