@@ -19,7 +19,7 @@ const CardContainer = styled.div`
   }
 
   @media (max-width: 1000px) {
-    width: 80%;
+    width: 95%;
   }
 `;
 

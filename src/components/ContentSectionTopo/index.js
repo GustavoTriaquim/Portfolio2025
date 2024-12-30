@@ -30,13 +30,13 @@ function ContentTopo() {
           <Title
             titleLineHeight='60px'
             titleFontSize='42px'
-            titleFontSizeMedia='25px'
+            titleFontSizeMedia='30px'
             titleLineHeightMedia='40px'
           >BEM-VINDO(A) AO PORTFOLIO DE</Title>
           <Title
             titleColor='#0a3b88'
             titleFontSize='42px'
-            titleFontSizeMedia='25px'
+            titleFontSizeMedia='30px'
           >GUSTAVO BRITTO TRIAQUIM</Title>
         </CenterDiv>
         <CenterDiv

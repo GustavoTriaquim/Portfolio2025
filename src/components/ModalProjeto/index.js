@@ -31,6 +31,10 @@ const ModalContent = styled.div`
   box-sizing: border-box;
   overflow: auto;
   gap: 30px;
+
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 const ImageModalProjeto = styled.img`
@@ -67,6 +71,10 @@ const ButtonModalProjeto = styled.button`
   &:hover {
     background-color: #0056b3;
   }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 
@@ -89,6 +97,7 @@ function ModalProjeto({ isOpen, onClose, project }) {
           borderCenterDiv='1px solid #0a3d889d'
           shadowBoxCenterDiv='0px 0px 8px #0a3d88d9'
           radiusCenterDiv='15px'
+          widthCenterDivMedia='95%'
         >
           <Paragraph
             paragraphWidth='100%'
